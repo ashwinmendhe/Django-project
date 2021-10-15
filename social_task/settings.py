@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-k+$^1v^1n6&elk$h%zsm7)gn-nju68kqtfbp)#f_xa*9qt$f^x
 DEBUG = False
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['ash-test1.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['ash-test2-cli.herokuapp.com','127.0.0.1']
 
 
 # Application definition
