@@ -16,4 +16,7 @@ class OrderForm(ModelForm):
 class CreateUserForm(UserCreationForm):
 	class Meta:
 		model = User
-		fields = ['username', 'email', 'password1', 'password2']
+		fields2 = '__all__'
+		
+		fields = ['first_name', 'username','email', 'password1', 'password2']
+		#print(fields)

@@ -21,15 +21,17 @@ def registerPage(request):
         return redirect('home')
     else:
         form = CreateUserForm()
+       
 
         if request.method == 'POST':
             form = CreateUserForm(request.POST)
+            #print(form)
             
             if form.is_valid():
-                print(form.is_valid())
+                #print(form.is_valid())
                 form.save()
             
-                user = form.cleaned_data.get('username')
+                user = form.cleaned_data.get('first_name')
                 messages.success(request,'Account was created for ' + user)
             
                 return redirect('login')
